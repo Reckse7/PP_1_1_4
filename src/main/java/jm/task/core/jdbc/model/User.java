@@ -28,6 +28,16 @@ public class User {
         this.age = age;
     }
 
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder();
+        sb.append("User{").append("id=").append(id);
+        sb.append(", name='").append(name).append('\'');
+        sb.append(", lastName='").append(lastName).append('\'');
+        sb.append(", age=").append(age).append('}');
+        return sb.toString();
+    }
+
     public Long getId() {
         return id;
     }
